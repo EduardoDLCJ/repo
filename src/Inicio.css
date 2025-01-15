@@ -1,0 +1,38 @@
+/* src/Inicio.css */
+
+.inicio-container {
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.titulo {
+  font-size: 2.5em;
+  color: #ffffff;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-left: 1; /* Asegura que no haya margen izquierdo */
+  margin-top: 250px;
+  font-weight: lighter;
+}
+
+.imagenfondo {
+  background-image: url('https://im.proptiger.com/1/1794655/6/shri-vaari-homes-elevation-24122711.jpeg');
+  background-size: contain;
+  width: 600px;
+  height: 550px;
+  float: right;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+}
+
+.inicio-container h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.inicio-container p {
+  font-size: 1.2em;
+  color: #555;
+}

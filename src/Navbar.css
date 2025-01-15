@@ -1,0 +1,125 @@
+/* General Navbar styles */
+.navbar {
+  background: linear-gradient(90deg, #c0c1c3, #bcbcbc); /* Fondo degradado */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(226, 221, 221, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegurarte de que el navbar ocupe todo el ancho */
+  position: fixed; /* Fijar el navbar en la parte superior */
+  top: 0; /* Asegurarte de que esté en la parte superior */
+  left: 0; /* Alinear al lado izquierdo */
+  z-index: 1000; /* Mantener el navbar sobre otros elementos */
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: space-between; /* Espaciar los elementos */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye el contenido entre izquierda y derecha */
+  width: 100%;
+}
+
+/* Logo styles */
+.navbar-logo  {
+  background-image: url('assets/logoe.png');
+  background-size: contain; /* Ajusta la imagen para que se contenga dentro del elemento */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  width: 50px; /* Ajusta el ancho del logo */
+  height: 50px; /* Ajusta la altura del logo */
+  margin: 0 auto 0px auto;
+  float: right; 
+  margin-left: 20px; /* Agregar un margen a la izquierda del logo */
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre enlaces */
+  margin-right: auto; /* Empuja los enlaces hacia el lado izquierdo */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffe600;
+}
+
+.navbar-links li {
+  list-style: none; /* Asegúrate de que cada elemento no tenga puntos */
+}
+
+
+/* Toggle button */
+.navbar-toggle {
+  display: none; /* Oculto por defecto en pantallas grandes */
+  background: none;
+  border: none;
+  font-size: 1.8rem; /* Tamaño del ícono */
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1100; /* Asegúrate de que esté encima del menú */
+}
+
+
+/* Logout text */
+.logout-text {
+  margin-right: 2rem; /* Ajustamos para que no quede tan pegado a la derecha */
+  font-size: 1rem;
+  color: #282828;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-text:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* Visible en pantallas pequeñas */
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-links.active {
+    transform: translateX(0);
+  }
+
+  .navbar-links a {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+.navbar-menu {
+  margin-right: 20px; /* Agregar un margen a la derecha del menú */
+}

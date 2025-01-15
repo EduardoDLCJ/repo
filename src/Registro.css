@@ -1,0 +1,182 @@
+/* Fondo que abarca toda la pantalla */
+.login-background {
+    min-height: 100vh;  /* Asegura que ocupe al menos toda la altura de la pantalla */
+    width: 100%;  /* Asegura que ocupe todo el ancho */
+    background-image: url('assets/imagen1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  /* Garantiza que se extienda a través de la pantalla */
+    top: 0;
+    left: 0;
+  }
+  
+  .logor {
+    background-image: url('assets/logoe.png');
+    background-size: contain; /* Ajusta la imagen para que se contenga dentro del elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    width: 150px; /* Ajusta el ancho del logo */
+    height: 150px; /* Ajusta la altura del logo */
+    margin: 0 auto 20px auto; /* Centra el logo y agrega un margen inferior */
+  }
+  
+  
+  /* Contenedor del formulario de login */
+  .login-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;  /* Aumenta el tamaño máximo */
+    padding: 40px;  /* Aumenta el padding del contenedor */
+    
+    border-radius: 15px;
+  }
+  
+  /* Formulario */
+  .login-container form {
+    background-color: transparent;  /* Fondo transparente */
+    border-radius: 25px;
+    padding: 40px;  /* Aumenta el padding para hacerlo más grande */
+    
+    backdrop-filter: blur(10px); /* Efecto vidrio */
+    border-top-left-radius: 0; /* Desactiva el borde superior derecho */
+    border-top-right-radius: 25px; /* Reactiva el borde superior derecho */
+  }
+  
+  .login-container form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .login-container form input {
+    display: block;
+    width: 90%;
+    padding: 12px;  /* Aumenta el padding de los inputs */
+    margin-bottom: 20px;
+    
+    background-color: #ffffffa5; /* Transparente */
+    border-radius: 20px;
+    color: #030303;
+    font-size: 14px;
+  }
+  
+  .login-container form input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .login-container form button {
+    width: 100%;
+  
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(30px);
+    
+  }
+  
+  .login-container form button:hover {
+    background-color: #8f8f99;
+  }
+  
+  .login-container form .warning {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .button{
+    background-color: #5a6c7400; /* Fondo semi-transparente igual al de los inputs */
+    color: rgb(90, 90, 90); /* Texto sin transparencia */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    backdrop-filter: blur(30px);
+    opacity: 1.2;
+  }
+  
+  
+  .login-container .shape {
+    position: absolute;
+    background-color: #5a6c74ae;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+  
+  .login-container .shape:nth-child(1) {
+    top: -50px;
+    left: -50px;
+  }
+  
+  .login-container .shape:nth-child(2) {
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .login-container {
+      max-width: 400px;  /* Se reduce en pantallas pequeñas */
+      padding: 20px;
+    }
+  
+    .login-container form {
+      padding: 25px;  /* Se ajusta el padding */
+    }
+  
+    .login-container form button {
+      font-size: 14px;
+    }
+  
+    .login-container .shape {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  
+  
+    .loading-spinner {
+      margin: 20px auto;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      z-index: 1000;
+    }
+    
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
