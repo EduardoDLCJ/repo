@@ -1,20 +1,4 @@
-/* General Navbar styles */
-.navbar {
-  background: linear-gradient(90deg, #c0c1c3, #bcbcbc); /* Fondo degradado */
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 6px rgba(226, 221, 221, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Asegurarte de que el navbar ocupe todo el ancho */
-  position: fixed; /* Fijar el navbar en la parte superior */
-  top: 0; /* Asegurarte de que esté en la parte superior */
-  left: 0; /* Alinear al lado izquierdo */
-  z-index: 1000; /* Mantener el navbar sobre otros elementos */
-  display: flex; /* Usar flexbox para alinear elementos */
-  align-items: center; /* Centrar verticalmente los elementos */
-  justify-content: space-between; /* Espaciar los elementos */
-}
+
 
 .navbar-container {
   display: flex;

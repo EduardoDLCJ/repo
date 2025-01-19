@@ -3,8 +3,6 @@ import React from 'react';
 import './Inicio.css';
 
 
-
-
 const InicioAd = () => {
   return (
     <div >

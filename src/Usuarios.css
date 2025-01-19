@@ -1,0 +1,95 @@
+.inicio-containerUsuarios {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffa3;
+    border-radius: 15px;
+  }
+
+
+
+/* Filtros */
+.inicio-containerUsuarios div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inicio-containerUsuarios input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.inicio-containerUsuarios input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Tabla */
+.inicio-containerUsuarios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.inicio-containerUsuarios th, .inicio-containerUsuarios td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.inicio-containerUsuarios th {
+    background-color: #007bff;
+    color: rgb(226, 222, 222);
+    font-weight: bold;
+}
+
+.inicio-containerUsuarios tbody tr:nth-child(even) {
+    background-color: #b8b8b8;
+}
+
+.inicio-containerUsuarios tbody tr:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+/* Resaltar filas */
+.inicio-containerUsuarios tbody tr:hover td {
+    color: #007bff;
+}
+
+/* Botón para acciones futuras */
+.action-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #218838;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+  }

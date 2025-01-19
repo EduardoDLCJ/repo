@@ -27,7 +27,7 @@ body {
   padding: 0; /* Asegurarse de que no haya relleno */
   min-width: 320px;
   min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.958); /* Fondo blanco traslúcido */
+  background-color: rgba(255, 255, 255, 0.556); /* Fondo blanco traslúcido */
   background-image: url('https://hogare.mx/static/assets/img/1920x1080/img32.jpg'); 
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen de fondo */
@@ -40,7 +40,23 @@ body {
   top: 0; /* Asegurarte de que esté en la parte superior */
   left: 0; /* Alinear al lado izquierdo */
   z-index: 1000; /* Mantener el navbar sobre otros elementos */
+  /* General Navbar styles */
+  background: linear-gradient(90deg, #c0c1c3, #bcbcbc); /* Fondo degradado */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(226, 221, 221, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegurarte de que el navbar ocupe todo el ancho */
+  position: fixed !important; /* Fijar el navbar en la parte superior */
+  top: 0; /* Asegurarte de que esté en la parte superior */
+  left: 0; /* Alinear al lado izquierdo */
+  z-index: 1000; /* Mantener el navbar sobre otros elementos */
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: space-between; /* Espaciar los elementos */
 }
+
 
 h1 {
   font-size: 3.2em;

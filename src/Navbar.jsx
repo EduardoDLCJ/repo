@@ -39,12 +39,9 @@ const Navbar = () => {
         </button>
         <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-          <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-          <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-          <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-          <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-          <li><a href="/Inicio"><i className="fa fa-home"></i> Inicio</a></li>
-
+          <li><a href="/PanelC"><i className="fa fa-home"></i> Panel de Control</a></li>
+          <li><a href="/Usuarios"><i className="fa fa-home"></i> Usuarios</a></li>
+          <li><a href="/Multas"><i className="fa fa-home"></i> Multas</a></li>
           {role === 'admin' && (
             <>
               <li><a href="/Gestion"><i className="fa fa-cogs"></i> Gestión</a></li>
@@ -55,7 +52,7 @@ const Navbar = () => {
           {role === 'subadmin' && (
             <>
               <li><a href="/Calendario"><i className="fa fa-calendar-check-o"></i>Calendario</a></li>
-              <li><a href="/Gestion"><i className="fa fa-cogs"></i> Gestión</a></li>
+              <li><a href="/Gestion"><i className="w-6 h-6 text-gray-800 dark:text-white"></i> Gestión</a></li>
             </>
           )}
           {role === 'sup' && (

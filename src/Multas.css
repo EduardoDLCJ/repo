@@ -1,0 +1,85 @@
+/* Estilo para el formulario */
+.form-container {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffa3;
+    border-radius: 15px;
+    width: 300px;
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffa3;
+    border-radius: 15px;
+    overflow-x: auto; /* Para tablas grandes */
+    width: 100%;
+    max-height: 500px; /* Limitar la altura si es necesario */
+}
+
+/* Otros estilos generales */
+.multas-title {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Reutiliza los estilos existentes para inputs y botones */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #455da0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: #455da0;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #4364c0;
+    color: white;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
